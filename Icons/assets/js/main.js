@@ -1,4 +1,4 @@
-[
+const icone = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -96,3 +96,15 @@
 		family: 'fas'
 	}
 ];
+
+icone.forEach((item) => {
+  $('.content-main').append(
+    `<div class="card">
+      <div class="content-card">
+      <i class="${item.family} ${item.prefix}${item.name}"></i>
+      <p>${item.name}</p>
+      </div>
+    </div>
+    `
+  )
+});
