@@ -101,9 +101,20 @@ $(document).ready(function(){
 
 
 
-var colore;
+
 
 icone.forEach((item) => {
+  var colore;
+
+  if (item.type == 'user') {
+    colore = 'purple';
+  } else if (item.type == 'vegetable') {
+    colore = 'orange';
+  } else {
+    colore = 'blue';
+  }
+  console.log(colore);
+
 
   $('.content-main').append(`
     <div class="card">
@@ -113,19 +124,8 @@ icone.forEach((item) => {
       </div>
     </div>
     `
-
   )
 
-  console.log(colore);
-
-
-  if (item.type == 'user') {
-    colore = 'purple';
-  } else if (item.type == 'vegetable') {
-    colore = 'orange';
-  } else {
-    colore = 'blue';
-  }
   console.log(colore);
 
 });
