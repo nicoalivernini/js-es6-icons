@@ -97,24 +97,37 @@ const icone = [
 	}
 ];
 
+$(document).ready(function(){
+
+
+
+var colore;
+
 icone.forEach((item) => {
+
   $('.content-main').append(`
     <div class="card">
       <div class="content-card">
-        <i class="${item.family} ${item.prefix}${item.name}"></i>
+        <i class="${item.family} ${item.prefix}${item.name} ${colore}"></i>
         <p>${item.name}</p>
       </div>
     </div>
     `
+
   )
 
-  let colore;
+  console.log(colore);
+
+
   if (item.type == 'user') {
     colore = 'purple';
   } else if (item.type == 'vegetable') {
-    colore = 'yellow';
+    colore = 'orange';
   } else {
     colore = 'blue';
   }
   console.log(colore);
+
 });
+
+});//Chiusura ready

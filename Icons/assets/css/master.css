@@ -39,7 +39,7 @@ main {
   background-color: #fff;
   padding: 20px;
   width: 15%;
-  margin: 10px 20px;
+  margin: 20px 20px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -64,14 +64,14 @@ main {
   font-size: 20px;
 }
 
-.blue i {
+.blue {
   color: rgb(10, 2, 255);
 }
 
-.orange i {
+.orange {
   color: rgb(252, 148, 7);
 }
 
-.purple i {
+.purple {
   color: rgb(107, 0 , 109);
 }
