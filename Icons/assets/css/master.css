@@ -63,3 +63,15 @@ main {
 .content-card i {
   font-size: 20px;
 }
+
+.blue i {
+  color: rgb(10, 2, 255);
+}
+
+.orange i {
+  color: rgb(252, 148, 7);
+}
+
+.purple i {
+  color: rgb(107, 0 , 109);
+}

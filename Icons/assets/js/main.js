@@ -98,13 +98,23 @@ const icone = [
 ];
 
 icone.forEach((item) => {
-  $('.content-main').append(
-    `<div class="card">
+  $('.content-main').append(`
+    <div class="card">
       <div class="content-card">
-      <i class="${item.family} ${item.prefix}${item.name}"></i>
-      <p>${item.name}</p>
+        <i class="${item.family} ${item.prefix}${item.name}"></i>
+        <p>${item.name}</p>
       </div>
     </div>
     `
   )
+
+  let colore;
+  if (item.type == 'user') {
+    colore = 'purple';
+  } else if (item.type == 'vegetable') {
+    colore = 'yellow';
+  } else {
+    colore = 'blue';
+  }
+  console.log(colore);
 });
